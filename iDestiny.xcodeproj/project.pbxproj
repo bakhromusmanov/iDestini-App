@@ -13,10 +13,12 @@
 		D0B98CD92C3AC0FB00D740B8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D0B98CD82C3AC0FB00D740B8 /* Base */; };
 		D0B98CDB2C3AC0FC00D740B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B98CDA2C3AC0FC00D740B8 /* Assets.xcassets */; };
 		D0B98CDE2C3AC0FC00D740B8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D0B98CDD2C3AC0FC00D740B8 /* Base */; };
+		D0B98CEA2C3AE17B00D740B8 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98CE92C3AE17B00D740B8 /* Story.swift */; };
+		D0B98CEC2C3AE19500D740B8 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98CEB2C3AE19500D740B8 /* StoryBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0B98CCE2C3AC0FB00D740B8 /* iDestini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDestini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B98CCE2C3AC0FB00D740B8 /* iDestiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDestiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B98CD12C3AC0FB00D740B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0B98CD32C3AC0FB00D740B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D0B98CD52C3AC0FB00D740B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		D0B98CDA2C3AC0FC00D740B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0B98CDD2C3AC0FC00D740B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0B98CDF2C3AC0FC00D740B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B98CE92C3AE17B00D740B8 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		D0B98CEB2C3AE19500D740B8 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		D0B98CC52C3AC0FB00D740B8 = {
 			isa = PBXGroup;
 			children = (
-				D0B98CD02C3AC0FB00D740B8 /* iDestini */,
+				D0B98CD02C3AC0FB00D740B8 /* iDestiny */,
 				D0B98CCF2C3AC0FB00D740B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +52,57 @@
 		D0B98CCF2C3AC0FB00D740B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0B98CCE2C3AC0FB00D740B8 /* iDestini.app */,
+				D0B98CCE2C3AC0FB00D740B8 /* iDestiny.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0B98CD02C3AC0FB00D740B8 /* iDestini */ = {
+		D0B98CD02C3AC0FB00D740B8 /* iDestiny */ = {
 			isa = PBXGroup;
 			children = (
 				D0B98CD12C3AC0FB00D740B8 /* AppDelegate.swift */,
 				D0B98CD32C3AC0FB00D740B8 /* SceneDelegate.swift */,
-				D0B98CD52C3AC0FB00D740B8 /* ViewController.swift */,
-				D0B98CD72C3AC0FB00D740B8 /* Main.storyboard */,
+				D0B98CE82C3AE06600D740B8 /* Model */,
+				D0B98CE52C3AE03100D740B8 /* View */,
+				D0B98CE72C3AE04B00D740B8 /* Controller */,
 				D0B98CDA2C3AC0FC00D740B8 /* Assets.xcassets */,
 				D0B98CDC2C3AC0FC00D740B8 /* LaunchScreen.storyboard */,
 				D0B98CDF2C3AC0FC00D740B8 /* Info.plist */,
 			);
-			path = iDestini;
+			path = iDestiny;
+			sourceTree = "<group>";
+		};
+		D0B98CE52C3AE03100D740B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0B98CD72C3AC0FB00D740B8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0B98CE72C3AE04B00D740B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0B98CD52C3AC0FB00D740B8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0B98CE82C3AE06600D740B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0B98CE92C3AE17B00D740B8 /* Story.swift */,
+				D0B98CEB2C3AE19500D740B8 /* StoryBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0B98CCD2C3AC0FB00D740B8 /* iDestini */ = {
+		D0B98CCD2C3AC0FB00D740B8 /* iDestiny */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0B98CE22C3AC0FC00D740B8 /* Build configuration list for PBXNativeTarget "iDestini" */;
+			buildConfigurationList = D0B98CE22C3AC0FC00D740B8 /* Build configuration list for PBXNativeTarget "iDestiny" */;
 			buildPhases = (
 				D0B98CCA2C3AC0FB00D740B8 /* Sources */,
 				D0B98CCB2C3AC0FB00D740B8 /* Frameworks */,
@@ -82,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = iDestini;
+			name = iDestiny;
 			productName = iDestini;
-			productReference = D0B98CCE2C3AC0FB00D740B8 /* iDestini.app */;
+			productReference = D0B98CCE2C3AC0FB00D740B8 /* iDestiny.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0B98CC92C3AC0FB00D740B8 /* Build configuration list for PBXProject "iDestini" */;
+			buildConfigurationList = D0B98CC92C3AC0FB00D740B8 /* Build configuration list for PBXProject "iDestiny" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0B98CCD2C3AC0FB00D740B8 /* iDestini */,
+				D0B98CCD2C3AC0FB00D740B8 /* iDestiny */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B98CEC2C3AE19500D740B8 /* StoryBrain.swift in Sources */,
 				D0B98CD62C3AC0FB00D740B8 /* ViewController.swift in Sources */,
 				D0B98CD22C3AC0FB00D740B8 /* AppDelegate.swift in Sources */,
 				D0B98CD42C3AC0FB00D740B8 /* SceneDelegate.swift in Sources */,
+				D0B98CEA2C3AE17B00D740B8 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0B98CC92C3AC0FB00D740B8 /* Build configuration list for PBXProject "iDestini" */ = {
+		D0B98CC92C3AC0FB00D740B8 /* Build configuration list for PBXProject "iDestiny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0B98CE02C3AC0FC00D740B8 /* Debug */,
@@ -353,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0B98CE22C3AC0FC00D740B8 /* Build configuration list for PBXNativeTarget "iDestini" */ = {
+		D0B98CE22C3AC0FC00D740B8 /* Build configuration list for PBXNativeTarget "iDestiny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0B98CE32C3AC0FC00D740B8 /* Debug */,
